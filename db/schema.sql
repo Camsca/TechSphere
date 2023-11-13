@@ -1,0 +1,2 @@
+DROP DATA IF EXISTS user_techDb;
+DROP DATA IF EXISTS user_techDb;

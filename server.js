@@ -1,14 +1,15 @@
 const path = require('path');   
 const express = require('express');
-
-
-
 const sequelize = require('./config/connection');
 
 
 const app = express();
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.PORT || 3001;
 
+
+app.get('/', (req, res) => {
+    res.send('Hello, this is your Express server!');
+});
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
